@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+void main()
+{
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\TurboC3\\BGI");
+	setcolor(5);
+	circle(300,200,60);
+	setfillstyle(SOLID_FILL,5);
+	floodfill(300,200,5);
+	setcolor(7);
+	circle(300,200,50);
+	setfillstyle(SOLID_FILL,7);
+	floodfill(300,200,7);
+	setcolor(RED);
+	setfillstyle(SOLID_FILL,RED);
+	line(200,170,200,240);
+	line(400,170,400,240);
+	line(150,170,150,240);
+	line(450,170,450,240);
+	line(100,170,100,240);
+	line(500,170,500,240);
+	line(50,170,50,240);
+	line(550,170,550,240);
+	setcolor(BLUE);
+	line(50,170,248,170);
+	line(50,240,253,240);
+	line(550,170,352,170);
+	line(550,240,348,240);
+	setcolor(BLUE);
+	line(300,170,300,200);
+	line(300,200,330,200);
+	line(300,200,310,180);
+	outtextxy(295,160,"12");
+	outtextxy(300,230,"6");
+	outtextxy(340,196,"3");
+	outtextxy(260,196,"9");
+	getch();
+	closegraph;
+}
