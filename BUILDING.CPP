@@ -1,0 +1,68 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
+void main()
+{
+	int gd=DETECT,gm;
+	initgraph(&gd,&gm,"C:\\TurboC3\\BGI");
+	setcolor(BLUE);
+	setfillstyle(SOLID_FILL,BLUE);
+	rectangle(120,140,200,240);
+	floodfill(121,141,BLUE);
+	setcolor(3);
+	setfillstyle(SOLID_FILL,3);
+	rectangle(220,40,320,240);
+	floodfill(221,41,3);
+	line(120,240,320,240);
+	setcolor(6);
+	line(400,140,400,240);
+	line(400,240,420,240);
+	line(420,240,420,140);
+	setcolor(5);
+	setfillstyle(SOLID_FILL,5);
+	rectangle(140,150,180,180);
+	floodfill(141,151,5);
+	setcolor(5);
+	setfillstyle(SOLID_FILL,5);
+	rectangle(140,200,180,230);
+	floodfill(141,201,5);
+	setcolor(5);
+	setfillstyle(SOLID_FILL,5);
+	rectangle(240,60,300,90);
+	floodfill(241,61,5);
+	setcolor(5);
+	setfillstyle(SOLID_FILL,5);
+	rectangle(240,110,300,140);
+	floodfill(241,111,5);
+	setcolor(5);
+	setfillstyle(SOLID_FILL,5);
+	rectangle(240,160,300,190);
+	floodfill(241,161,5);
+	setcolor(6);
+	line(400,140,410,130);
+	line(410,130,420,140);
+	setfillstyle(SOLID_FILL,6);
+	floodfill(401,141,6);
+	setcolor(GREEN);
+	setfillstyle(SOLID_FILL,GREEN);
+	circle(430,125,20);
+	floodfill(431,126,GREEN);
+	setcolor(GREEN);
+	setfillstyle(SOLID_FILL,GREEN);
+	circle(390,125,20);
+	floodfill(391,126,GREEN);
+	setcolor(GREEN);
+	setfillstyle(SOLID_FILL,GREEN);
+	circle(440,100,20);
+	floodfill(441,101,GREEN);
+	setcolor(GREEN);
+	setfillstyle(SOLID_FILL,GREEN);
+	circle(410,90,20);
+	floodfill(411,91,GREEN);
+	setcolor(GREEN);
+	setfillstyle(SOLID_FILL,GREEN);
+	circle(380,100,20);
+	floodfill(381,101,GREEN);
+	getch();
+	closegraph;
+}
